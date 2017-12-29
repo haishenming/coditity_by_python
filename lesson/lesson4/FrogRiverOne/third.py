@@ -19,5 +19,6 @@ def solution(X, A):
 
 
 
+
 if __name__ == '__main__':
     print(solution(*test_data))
