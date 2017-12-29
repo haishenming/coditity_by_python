@@ -9,7 +9,13 @@ def solution(A):
     A = sorted(A)
 
     for i, a in enumerate(A, 1):
-        a_plus = A[i]
+        try:
+            a_plus = A[i]
+        except:
+            if a + 1 > 0:
+                return a + 1
+            else:
+                return 1
         if a + 1 != a_plus and a != a_plus:
             if a + 1 > 0:
                 return a + 1
